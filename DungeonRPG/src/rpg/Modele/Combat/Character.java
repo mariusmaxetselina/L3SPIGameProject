@@ -1,5 +1,7 @@
-package rpg.Modele;
+package rpg.Modele.Combat;
 
+import rpg.Modele.Stats;
+import rpg.Modele.Object.Stuff;
 
 public abstract class Character {
 	//Variables

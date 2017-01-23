@@ -1,4 +1,6 @@
-package rpg.Modele;
+package rpg.Modele.Combat;
+
+import rpg.Modele.Stats;
 
 public class Monster extends Character{
 
