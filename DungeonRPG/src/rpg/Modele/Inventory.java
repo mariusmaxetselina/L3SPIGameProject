@@ -3,6 +3,9 @@ package rpg.Modele;
 import java.util.ArrayList;
 import java.util.List;
 
+import rpg.Modele.Object.Equipement;
+import rpg.Modele.Object.Usable;
+
 
 
 public class Inventory {

@@ -1,4 +1,4 @@
-package rpg.Modele;
+package rpg.Modele.Combat;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,7 @@
-package rpg.Modele;
+package rpg.Modele.Combat;
+
+import rpg.Modele.Inventory;
+import rpg.Modele.Stats;
 
 public class Hero extends Character{
 	protected Inventory bag;

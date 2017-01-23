@@ -1,5 +1,8 @@
 package rpg.Modele;
 
+import rpg.Modele.Combat.Hero;
+import rpg.Modele.Combat.HeroFactory;
+
 public class Jeu {
 	private static Hero hero;
 	
