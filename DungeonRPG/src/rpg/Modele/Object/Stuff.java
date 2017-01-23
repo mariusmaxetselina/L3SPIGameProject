@@ -1,4 +1,4 @@
-package rpg.Modele;
+package rpg.Modele.Object;
 
 public class Stuff {
 	Helmet casque;

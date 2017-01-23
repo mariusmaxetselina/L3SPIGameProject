@@ -1,4 +1,4 @@
-package rpg.Modele;
+package rpg.Modele.Combat;
 
 public class Charactere {
 
