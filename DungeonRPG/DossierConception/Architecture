@@ -1,1 +1,13 @@
+
 Architecture :
+
+Une classe Etudiant qui comprend :
+ses stats
+son état (les jauges de motivation, de santé,...)
+
+Une class journée composées des différentes phases :
+Une class Matin
+Une class Midi
+Une class AprèsMidi
+Une class Soirée
+Une class Nuit
