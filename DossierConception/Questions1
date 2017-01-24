@@ -1,0 +1,72 @@
+Questions :
+
+Le jeu doit être simple : on rajoutera les spécificités après.
+     - premier jet : le jeu ne contient qu'une séquence de combat : 1 héro avec des compétences de bases,
+      1 monstre qui ne fait qu'attaquer
+     
+*)questions simples :
+- un ou plusieurs héros ? -peut-être commencé par un perso lambda
+- un ou/et ou plusieurs ennemies à la fois ?
+- des trésors, une monnaie, des objets, des potions ?
+- héros choisissables ?
+
+
+
+*)Le jeu comportera une phase de combat classique comme pokémon, dragonquest, finalfantasy,...
+C'est un jeu au tour par tour : Nos personnages combattent, les ennemis aussi...
+
+
+*)Pour la phase de combat : je propose que chaque personnage(ennemi ou alliés) ait 
+des stats :
+-Initiative : cela va permettre de donner l'ordre des personnages pour le combat
+-Force
+-Esprit ou Intelligence ou QI
+-Chance
+-Résistance
+-Vitesse
+-> tous ses paramètres peuvent gérer l'attaque que va effectuer le héro, sa défense en cas d'attaque,
+son esquive, son mana, chakra ou ki,...
+Voir paramètres des jeux lambdas
+
+
+*)Il faut un scénario simple et un titre :
+(voir section ScénarioPossible)
+
+*)Séparation du code en Modèle-Vue-Contrôleur
+Ajout de commentaires obligatoire !
+Les images seront dans le dossier de Ressources.
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+Combat-Perso
+(1 ou +ieurs alliés ou ennemies ?)
+
+Les capacités classiques du Perso lambda :
+la fuite
+attaque de base
+consommation d'objet
+attaque spéciale ??? (utilisation du paramètre esprit en plus par exemple)
+
+du monstre :
+attaque de base
+attaque critique (nombre d'apparition varie en fonction de sa chance)
+ont créera des comportements définis pour les monstres (DP Stratégie)
+ 
+Des attaques qui durent dans le temps ? Poison, Brulure,... ?
+Des stuns ?
+arbre de compétences ?
+
+
+les objets :
+-Potion de Vie
+-Potion de Mana (pas encore pris en compte)
+-Potion d'Endurance (pas encore pris en compte)
+
+Armes/Armures ???
+Y aura-t'il des armes et des armures ? si oui comment cela fonctionne ?
+une personne peut porter une ou deux armes ? 
+peut-il porter un bouclier ?
+peut-il changer d'arme en cours de combat ?
+quel importance a l'arme et l'armure dans le combat ? (bonus ?)
+son armure est elle découper en jambières, chaussures, gantlets, plastron, casque ?
