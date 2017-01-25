@@ -1,13 +1,81 @@
 
-Architecture :
+Architecture par mariusmaxetselina:
 
 Une classe Etudiant qui comprend :
 ses stats
-son �tat (les jauges de motivation, de sant�,...)
+son état (les jauges de motivation, de santé,...)
 
-Une class journ�e compos�es des diff�rentes phases :
+Une class journée composées des différentes phases :
 Une class Matin
 Une class Midi
-Une class Apr�sMidi
-Une class Soir�e
+Une class AprèsMidi
+Une class Soirée
 Une class Nuit
+
+================================================================================
+
+Architecture par Len :
+
+3 main packages :
+  _ Engine      : SuperPackage principale (contenant les fondamentaux du systeme) 
+  _ Structure   : SuperPackage structurel (contenant l'organisation du systeme)
+  _ Renderer    : SuperPackage de rendu (contenant l'interfacing du systeme)
+  
+  
+  * Structure (Contrôleur) :
+      
+      => Gère l'ensemble des classes liées à la structure du jeu, les différents éléments physico-logique qui le constitue.
+      
+      SousPackages :  
+        _ ..Structure.main
+            => Gere les méthodes clées liées à la structure du jeu
+               _ Effectue la liaison avec l'Engine
+               _ Contrôle les modification sur l'affichage
+        _ ..Structure.core
+            => Gere les principales structures du jeu 
+               _ Les Personnages / Joueurs / Heros / Boss etc..
+               _ Les Items / Stats / Status 
+               _ Les Maps / Lieux 
+        _ ..Structure.events
+            => Gere les evenements impactants la structure du jeu
+               _ Events 
+        _ ..Structure.errors
+            => Gere les eventuelles erreurs
+                _ Erreurs persos.
+  
+  
+  * Renderer (Vue) :
+      
+      => Gère le systeme de rendu du jeu / l'interface et le visuel.
+      
+      SousPackages :
+        _ ..Renderer.system
+          => Gere le système principal du rendu
+             _ Effectue la liaison entre le contrôleur et les différents sous packages de rendu
+        _ ..Renderer.interfaces
+          => Gere les differentes interfaces / maps / sprites / etc ...
+        _ ..Renderer.hud
+          => Gere les éléments du HUD 
+        _ ..Renderer.events
+          => Gere les évènements ayant un impacts direct sur les interfaces graphiques
+        _ ..Renderer.errors
+          => Gere les eventuelles erreurs liées aux interfaces
+ 
+  * Engine (Modèle) :
+      
+       => Gere le moteur du jeu, l'ensemble de son fonctionnement
+      
+      SousPackages :
+        _ ..Engine.core
+          => Constitue le coeur du jeu 
+            _ Les fonctionnalités principale
+            _ La liaison entre le contrôleur et la vue
+        _ ..Engine.preferences
+          => Gere les méthodes d'execution du jeu
+        _ ..Engine.utilities
+          => Les utiles 
+        _ ..Engine.errors
+          => Gere les eventuelles erreurs
+        _ ..Engine.methods
+          => Gere les methodes principales de lancement
+
